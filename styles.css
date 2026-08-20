@@ -1,0 +1,192 @@
+/* Global Reset & Theme */
+.stApp {
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Main Hero Header - Shifted higher with larger text */
+.hero-header {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #818cf8 100%);
+    padding: 28px 32px;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.25);
+    margin-top: -30px; /* Heading ko upar shift kiya */
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-size: 2.6rem; /* Font size bada kiya */
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem; /* Font size bada kiya */
+    color: #e0e7ff;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+/* Section Labels */
+.section-label {
+    font-size: 1.45rem; /* Font size bada kiya */
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Step Cards (How To Use) */
+.step-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.12);
+    border-color: #cbd5e1;
+}
+
+.step-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #4f46e5;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.step-title {
+    font-weight: 700;
+    font-size: 1.2rem; /* Font size bada kiya */
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.step-desc {
+    font-size: 0.98rem; /* Font size bada kiya */
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Persona Cards (Who Can Use) */
+.persona-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    height: 100%;
+}
+
+.persona-card:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    border-color: #818cf8;
+}
+
+.persona-icon {
+    font-size: 2rem; /* Icon size bada kiya */
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 12px;
+    line-height: 1;
+}
+
+.persona-title {
+    font-weight: 700;
+    font-size: 1.1rem; /* Font size bada kiya */
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.persona-desc {
+    font-size: 0.92rem; /* Font size bada kiya */
+    color: #64748b;
+    line-height: 1.45;
+}
+
+/* Glass Info & Stat Badges */
+.info-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+}
+
+.stat-badge {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.stat-number {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #4f46e5;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.decision-pill {
+    background: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 12px 16px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-weight: 500;
+    font-size: 0.98rem;
+}
+
+/* Streamlit Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 12px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 1.05rem; /* Tab text font size bada kiya */
+    border: 1px solid #e2e8f0;
+    padding: 0 24px;
+}
+
+.stTabs [aria-selected="true"] {
+    background: #4f46e5 !important;
+    color: #ffffff !important;
+    border-color: #4f46e5 !important;
+}
