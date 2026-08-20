@@ -7,19 +7,22 @@ An end-to-end, full-stack AI application that transforms raw audio and video rec
 ## 🎬 Product Demo & Sample Media
 
 ### 🎥 Full End-to-End Walkthrough
-Watch the complete processing pipeline in real time:
+Watch the complete end-to-end processing pipeline, dynamic UI rendering, and history logs in real time:
 
-<video src="./assets/sample_video.mp4" controls="controls" style="max-width: 100%; width: 100%;"></video>
+<video src="./assets/demo_video.mp4" controls="controls" style="max-width: 100%; width: 100%;"></video>
 
-*(If your browser does not render the inline video player, [download or view sample_video.mp4 directly](./assets/sample_video.mp4).)*
-
-### 🔊 Input Sample Audio
-Listen to or download the sample audio file used during testing:
-🎵 **[Download Sample Audio File](./assets/sample_audio.mp3)**
+*(If your browser does not render the inline video player above, [download or view demo_video.mp4 directly](./assets/demo.mp4).)*
 
 ---
 
-## ⚡ Features
+### 📁 Input Sample Assets
+
+* 🔊 **Sample Audio Input:** [Download / Listen to `sample_audio.mp3`](./assets/sample_audio.mp3)
+* 🎥 **Sample Video Input:** [Download / View `sample_video.mp4`](./assets/sample_video.mp4)
+
+---
+
+## ⚡ Key Features
 
 * **Multi-Format Media Support:** Upload `.mp3`, `.wav`, `.m4a`, `.ogg`, `.mp4`, `.mkv`, `.mov`, and `.avi` files.
 * **Local Audio Compression:** Uses **FFmpeg** to extract audio tracks and downsample them to 16kHz mono MP3 (`64kbps`) before network requests, minimizing upload sizes and accelerating API processing times.
@@ -49,7 +52,7 @@ Listen to or download the sample audio file used during testing:
 
 ```text
 .
-├── assets/         # Public demo video (sample_video.mp4) and sample media (sample_audio.mp3)
+├── assets/         # Local media assets (demo_video.mp4, sample_audio.mp3, sample_video.mp4)
 ├── app.py          # Streamlit UI interface and dynamic card layout
 ├── main.py         # FastAPI backend server & Groq transcription/analysis pipeline
 ├── schemas.py      # Pydantic data models for structured response validation
