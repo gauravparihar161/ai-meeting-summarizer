@@ -4,25 +4,22 @@ An end-to-end, full-stack AI application that transforms raw audio and video rec
 
 ---
 
-## 🎬 Product Demo & Sample Pipeline
+## 🎬 Product Demo & Sample Media
+
+### 🎥 Full End-to-End Walkthrough
+Watch the complete processing pipeline in real time:
+
+<video src="./assets/sample_video.mp4" controls="controls" style="max-width: 100%; width: 100%;"></video>
+
+*(If your browser does not render the inline video player, [download or view sample_video.mp4 directly](./assets/sample_video.mp4).)*
 
 ### 🔊 Input Sample Audio
-Listen to the input audio file tested in the demonstration:
-🎵 **[Download / Play Sample MP3 Audio](https://github.com/user-attachments/files/31277708/Babies.-.Phrases.lingoneo.org.mp3)**
-
-### 🎥Input Sample Video
-
-https://github.com/user-attachments/assets/5c99f57a-24a1-461c-96cb-539c9530ae0b
-
-### ⚡ Animated UI Output
-Watch the complete end-to-end processing pipeline in real time,
-Quick visual glance of the rendered output cards and interactive UI:
-
-<img width="800" alt="UI Output Demo GIF" src="https://github.com/user-attachments/assets/f2ba352f-5664-4013-b118-e5fcccba314e" />
+Listen to or download the sample audio file used during testing:
+🎵 **[Download Sample Audio File](./assets/sample_audio.mp3)**
 
 ---
 
-## ⚡ Key Features
+## ⚡ Features
 
 * **Multi-Format Media Support:** Upload `.mp3`, `.wav`, `.m4a`, `.ogg`, `.mp4`, `.mkv`, `.mov`, and `.avi` files.
 * **Local Audio Compression:** Uses **FFmpeg** to extract audio tracks and downsample them to 16kHz mono MP3 (`64kbps`) before network requests, minimizing upload sizes and accelerating API processing times.
@@ -52,6 +49,7 @@ Quick visual glance of the rendered output cards and interactive UI:
 
 ```text
 .
+├── assets/         # Public demo video (sample_video.mp4) and sample media (sample_audio.mp3)
 ├── app.py          # Streamlit UI interface and dynamic card layout
 ├── main.py         # FastAPI backend server & Groq transcription/analysis pipeline
 ├── schemas.py      # Pydantic data models for structured response validation
